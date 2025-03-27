@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="./dist/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Chess Tutorials</title>
+</head>
+
+<body class="bg-gray-200 text-black font-semibold">
+    <header>
+        <nav class="h-14 p-3 flex bg-white justify-between items-center shadow-lg">
+            <a href="index.html" id="logo" class="flex gap-2 items-center">
+                <img src="./images/pawn-removebg-preview.png" alt="Ayush Chess" class="object-cover max-w-12 max-h-16">
+                <span class="text-lg font-extrabold font-serif">Ayush Chess</span>
+            </a>
+            <div id="nav-menu" class="hidden md:flex gap-8">
+                <a href="index.html" class="font-medium w-16 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Home</a>
+                <a href="about.html" class="font-medium w-16 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">About</a>
+                <a href="services.html" class="font-medium w-20 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Services</a>
+                <a href="contact.html" class="font-medium w-20 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Contact</a>
+                <a href="signin.html" class="font-medium w-20 text-center text-black hover:bg-blue-100 bg-gray-100  rounded-lg">Sign in</a>
+            </div>
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+            <div id="nav-dialog" class="fixed hidden  md:hidden bg-white z-10 inset-0 p-3">
+                <div id="nav-bar" class="flex justify-between shadow">
+                    <a href="index.html" id="logo" class="flex gap-2 items-center">
+                        <img src="./images/pawn-removebg-preview.png" alt="Ayush Chess" class="object-cover max-w-12 max-h-12">
+                        <span class="text-lg font-extrabold font-serif">Ayush Chess</span>
+                    </a>
+                    <button class="p-2 md:hidden" onclick="handleMenu()">
+                        <i class="fa-solid fa-xmark text-gray-800"></i>
+                    </button>
+                </div><hr>
+
+                <div class="mt-6">
+                    <a href="index.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Home</a>
+                    <a href="about.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">About</a>
+                    <a href="services.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Services</a>                  
+                    <a href="contact.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Contact</a>
+                    <a href="signin.html" class="font-medium text-center m-3 p-2 text-black hover:bg-green-100 bg-gray-200 block rounded-lg">Sign in</a>
+                    <a href="signup.html" class="font-medium text-center m-3 p-2 text-white bg-green-800 hover:bg-gray-300 hover:text-black block rounded-md">Sign up</a>
+    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main class="m-10 grid grid-row-2 justify-center items-center">
+    <strong class="text-lg text-center">About Us</strong>
+    <br>
+    <div class="bg-white text-black shadow-xl mx-10 p-6 w-fit rounded-xl  wow animate__animated animate__slideInLeft">
+        <i class="fa-solid fa-hands-praying"></i>       Welcome to Ayush Chess <br> <br>
+    At AyushChess, we are passionate about the game of chess and dedicated to helping players of all levels improve their skills and 
+    deepen their understanding of this timeless strategy game. Whether you are a complete beginner or an experienced player looking 
+    to refine your tactics, our comprehensive resources are designed to guide you on your chess journey.
+    </div><br>
+    <div class="bg-gray-900 text-white shadow-xl mx-10 p-6 w-fit rounded-xl  wow animate__animated animate__slideInRight">
+        <i class="fa-solid fa-rocket"></i>
+    Our Mission <br><br>
+    Our mission is to make chess accessible and enjoyable for everyone. We believe that chess is not just a game but a powerful tool 
+    for developing critical thinking, problem-solving skills, and patience. Through our tutorials, articles, and interactive content, 
+    we aim to foster a love for chess and empower players to reach their full potential.
+    </div>
+    <br>
+    <div class="bg-white text-black shadow-xl mx-10 p-6 w-fit rounded-xl  wow animate__animated animate__slideInLeft">
+        <i class="fa-solid fa-hands-holding-child"></i>
+    What We Offer <br><br>
+    In-Depth Tutorials: Our step-by-step tutorials cover everything from the basic rules and piece movements to advanced strategies 
+    and openings. Each lesson is crafted by experienced chess players and educators to ensure clarity and effectiveness. <br>
+    your learning. <br>
+    Community Support: Join our vibrant community of chess enthusiasts! Share your experiences, ask questions, and connect with fellow 
+    players through our forums and social media channels. Together, we can learn and grow as chess players. <br>
+    
+    </div>
+<br>
+   <div class="bg-gray-900 text-white shadow-xl mx-10 p-6 w-fit rounded-xl  wow animate__animated animate__slideInRight">
+    <i class="fa-solid fa-hand-fist"></i>
+    Why Choose Us? <br><br>
+    User-Friendly Interface: Our website is designed with you in mind. Navigate easily through our resources, find what you need quickly, 
+    and enjoy a seamless learning experience.  <br>
+    Tailored Content: We understand that every player is unique. <br>
+    Our Commitment to Excellence: We are committed to providing high-quality content that is accurate, engaging, and informative. 
+     <br><b> Your success in chess is our priority!
+   </div></b> 
+    <br>
+    <br>
+    <div class="bg-white text-black shadow-xl mx-10 p-6 w-fit rounded-xl  wow animate__animated animate__slideInLeft">
+        <i class="fa-solid fa-handshake-simple"></i>
+        Thank you for choosing Ayush Chess. Together, let's unlock the secrets of chess.
+    </div>  
+    </main>
+    <footer id="contact" class="bg-gray-800 text-gray-200 py-10 text-center">
+      <p>At-saphale,near flyover, saphale east, palghar-401102.</p><br>
+      <div class="container  mx-auto text-center space-y-2">
+          <p>Connect with us on following social media Platforms.</p>
+          <div class="flex justify-center items-center sm:gap-x-2 lg:gap-10">
+              <a href="#" class="gap-1">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+              </a>
+              <a href="#" class="gap-1">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+              </a>
+              <a href="#" class="gap-1">
+                  <i class="fa-brands fa-twitter"></i>
+                  <span>Twitter</span>
+              </a>
+              <a href="#" class="gap-1">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LinkedIn</span>
+              </a>
+          </div>
+      </div><br>
+      <div>
+          <i class="fa-regular fa-copyright"></i>
+          <span>Copyright All rights are reserved</span>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

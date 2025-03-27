@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="./dist/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Chess Tutorials</title>
+</head>
+
+<body class="bg-gray-200 text-black font-semibold">
+    <header>
+        <nav class="h-14 p-3 flex bg-white justify-between items-center shadow-lg">
+            <a href="index.html" id="logo" class="flex gap-2 items-center">
+                <img src="./images/pawn-removebg-preview.png" alt="Ayush Chess" class="object-cover max-w-12 max-h-16">
+                <span class="text-lg font-extrabold font-serif">Ayush Chess</span>
+            </a>
+            <div id="nav-menu" class="hidden md:flex gap-8">
+                <a href="index.html" class="font-medium w-16 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Home</a>
+                <a href="about.html" class="font-medium w-16 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">About</a>
+                <a href="services.html" class="font-medium w-20 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Services</a>
+                <a href="contact.html" class="font-medium w-20 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Contact</a>
+            </div>
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+            <div id="nav-dialog" class="fixed hidden  md:hidden bg-white z-10 inset-0 p-3">
+                <div id="nav-bar" class="flex justify-between shadow">
+                    <a href="index.html" id="logo" class="flex gap-2 items-center">
+                        <img src="./images/pawn-removebg-preview.png" alt="Ayush Chess" class="object-cover max-w-12 max-h-12">
+                        <span class="text-lg font-extrabold font-serif">Ayush Chess</span>
+                    </a>
+                    <button class="p-2 md:hidden" onclick="handleMenu()">
+                        <i class="fa-solid fa-xmark text-gray-800"></i>
+                    </button>
+                </div><hr>
+
+                <div class="mt-6">
+                    <a href="index.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Home</a>
+                    <a href="about.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">About</a>
+                    <a href="services.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Services</a>                  
+                    <a href="contact.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h2 class="text-2xl font-bold mt-8 text-center">Sign in</h2><br>
+    <div id="success" class=" flex-col m-10 bg-white p-10 rounded-lg shadow-lg wow animate__animated animate__backInDown">
+        <form id="signupForm" action="signin.php" method="POST" onsubmit="return validateForm()" class="space-y-4 ">            
+            <div>
+                <label for="email">Email</label><br>
+                <input type="text" type="tel" name="login" id="login" required placeholder="Enter Your Registered Email or phone no"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"><br><br>
+            </div>
+            <div>
+                <label for="pass">Password</label><br>
+                <input type="password" name="pass" id="pass" required placeholder="Enter your password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"><br><br>
+            </div>
+            <div class="flex justify-between">
+                <div>
+                    <input type="checkbox" name="store" id="store">
+                    <label for="store" class="text-indigo-600 hover:text-gray-900">Remember me</label>
+                </div>
+                <div class="text-center">
+                    <input type="submit" id="submit" name="submit" value="Login"
+                        class="w-20 h-8 bg-blue-700 text-white px-3 py-1 transition rounded-lg hover:bg-gray-200 hover:text-black shadow-2xl">
+                </div>
+            </div>
+            <div>
+                Don't have an account? Create an Account <a href="signup.html" class="underline text-blue-700 hover:text-gray-900">Sign up</a>
+            </div>
+        </form>
+    </div>
+    <footer id="contact" class="bg-gray-800 text-gray-200 py-10 text-center">
+        <p>At-saphale,near flyover, saphale east, palghar-401102.</p><br>
+        <div class="container  mx-auto text-center space-y-2">
+            <p>Connect with us on following social media Platforms.</p>
+            <div class="flex justify-center items-center sm:gap-x-2 lg:gap-10">
+                <a href="#" class="gap-1">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="gap-1">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="gap-1">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="gap-1">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div><br>
+        <div>
+            <i class="fa-regular fa-copyright"></i>
+            <span>Copyright All rights are reserved</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

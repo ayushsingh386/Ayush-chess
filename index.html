@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="./dist/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Chess Tutorials</title>
+
+    <style>
+        .bg-hero {
+            background-image: url('./images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            width: full;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-300 text-black font-semibold ">
+    <header>
+        <nav class="h-14 p-3 flex bg-white justify-between items-center shadow-lg">
+            <a href="index.html" id="logo" class="flex gap-2 items-center">
+                <img src="./images/pawn-removebg-preview.png" alt="Ayush Chess" class="object-cover max-w-12 max-h-16">
+                <span class="text-lg font-extrabold font-serif">Ayush Chess</span>
+            </a>
+            <div id="nav-menu" class="hidden md:flex gap-8">
+                <a href="index.html" class="font-medium w-16 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Home</a>
+                <a href="about.html" class="font-medium w-16 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">About</a>
+                <a href="services.html" class="font-medium w-20 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Services</a>
+                <a href="contact.html" class="font-medium w-20 text-center border-2 hover:border-green-800 hover:text-green-800 rounded-3xl">Contact</a>
+                <a href="signin.html" class="font-medium w-20 text-center text-black hover:bg-green-100 bg-gray-100  rounded-lg">Sign in</a>
+            </div>
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+            <div id="nav-dialog" class="fixed hidden  md:hidden bg-white z-10 inset-0 p-3">
+                <div id="nav-bar" class="flex justify-between shadow">
+                    <a href="index.html" id="logo" class="flex gap-2 items-center">
+                        <img src="./images/pawn-removebg-preview.png" alt="Ayush Chess" class="object-cover max-w-12 max-h-12">
+                        <span class="text-lg font-extrabold font-serif">Ayush Chess</span>
+                    </a>
+                    <button class="p-2 md:hidden" onclick="handleMenu()">
+                        <i class="fa-solid fa-xmark text-gray-800"></i>
+                    </button>
+                </div><hr>
+
+                <div class="mt-6">
+                    <a href="index.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Home</a>
+                    <a href="about.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">About</a>
+                    <a href="services.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Services</a>                  
+                    <a href="contact.html" class="font-medium m-3 p-3 text-center hover:bg-gray-200 block rounded-lg">Contact</a>
+                    <a href="signin.html" class="font-medium text-center m-3 p-2 text-black hover:bg-green-100 bg-gray-200 block rounded-lg">Sign in</a>
+                    <a href="signup.html" class="font-medium text-center m-3 p-2 text-white bg-green-800 hover:bg-gray-300 hover:text-black block rounded-md">Sign up</a>
+    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <section class="bg-hero text-black hover:text-white hover:underline mx-auto wow animate__animated animate__slideInRight">
+        The game of chess is a lake in which a mosquito can breathe and an elephant can drown.
+    </section>
+    <main class="container mx-auto md:mx-auto wow animate__animated animate__fadeIn">
+        <div>
+           
+            <div class="my-6 gap-y-4 md:mx-16 sm:mx-16">
+                <h1 class="text-center uppercase text-4xl font-bold">chess tutorial</h1>
+                <br><br>
+                
+                <p>
+                    <span class="text-xl font-serif">What is Chess?</span>
+                    <br><br>
+                    <div class="bg-green-800 text-white shadow-xl p-6 w-fit rounded-xl wow animate__animated animate__slideInRight">
+                        Chess is a strategic board game played between two opponents, where each player commands an army
+                    of
+                    pieces with the objective of checkmating the opponent's king. This game has a rich history and
+                    is
+                    known for its deep tactical and strategic elements, making it one of the most popular games
+                    worldwide.
+                    </div>
+                    <br><br>
+                    <span class="text-lg font-serif"> Chess Board Setup</span>
+                    <br><br>
+                    <div class="bg-white text-gray-900 shadow-2xl p-6 w-fit rounded-xl wow animate__animated animate__slideInLeft">
+                    The chessboard consists of 64 squares arranged in an 8x8 grid, alternating between light and
+                    dark
+                    colors. Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two
+                    bishops,
+                    and eight pawns.
+                    
+                    <br>
+                    The setup is as follows:
+                    <br>
+                    - First Rank (closest to the player):
+                    Rook, Knight, Bishop, Queen (on her color), King, Bishop, Knight, Rook.
+                    <br>
+                    - Second Rank: Eight Pawns.
+                    <br><br>
+                    White pieces are set up on ranks 1 and 2, while black pieces are set up on ranks 7 and 8. The
+                    player
+                    controlling the white pieces always moves first.
+                    </div>
+                    <br><br>
+                    <span class="text-lg font-serif ">Movement of Pieces</span>
+                    <br><br>
+                    <div class="bg-green-800 text-white shadow-xl p-6 w-fit rounded-xl wow animate__animated animate__slideInRight">
+                    Each type of chess piece has its own unique movement rules:
+                    <br>
+                    - King: Moves one square in any direction (horizontally, vertically, or diagonally). Cannot move
+                    into check.
+                    <br>
+                    - Queen: Moves any number of squares in any direction (horizontally, vertically, or diagonally).
+                    <br>
+                    - Rook: Moves any number of squares horizontally or vertically.
+                    <br>
+                    - Bishop: Moves any number of squares diagonally.
+                    <br>
+                    - Knight: Moves in an "L" shape (two squares in one direction and then one square perpendicular)
+                    and can jump over other pieces.
+                    <br>
+                    - Pawn: Moves forward one square (or two squares on its first move) and captures diagonally.
+                    Upon reaching the opposite end of the board, a pawn can be promoted to any other piece (except
+                    king).
+                    </div>
+                    <br><br>
+                    <span class="text-lg font-serif ">Special Moves</span>
+                    <br><br>
+                    <div class="bg-white text-gray-900 shadow-2xl p-6 w-fit rounded-xl wow animate__animated animate__slideInLeft">
+                    - Castling: A special move involving the king and a rook that allows both to move simultaneously
+                    under certain conditions.
+                    <br>
+                    - En Passant: A special pawn capture that can occur when a pawn moves two squares forward from
+                    its starting position and lands next to an opponent's pawn.
+                    </div>
+                    <br><br>
+                    <span class="text-lg font-serif ">Objective of the Game</span>
+                    <br><br>
+                    <div  class="bg-green-800 text-white shadow-xl p-6 w-fit rounded-xl  wow animate__animated animate__slideInRight">
+                    The primary goal in chess is to checkmate the opponent's king. This occurs when the king is in a
+                    position to be captured ("in check") and there are no legal moves available to escape this
+                    threat.
+                    </div>
+                    <br><br>
+                    <details>
+                        <summary class="text-indigo-800 hover:text-gray-800 text-center px-3 py-1 rounded-lg" >
+                            <div>
+                                Click here to read more
+                            </div>
+                        </summary>   
+                            <br>
+                    <span class="text-lg font-serif ">Winning Conditions</span>
+                    <br><br>
+                    <div class="bg-white text-gray-900 shadow-2xl p-6 w-fit rounded-xl wow animate__animated animate__slideInLeft">
+                    1. Checkmate: The opponent's king is under attack and cannot escape.
+                    <br>
+                    2. Stalemate: The game ends in a draw if a player has no legal moves but is not in check.
+                    <br>
+                    3. Resignation: A player may concede defeat at any time during the game.
+                    <br><br>
+                    </div>
+                    <br> <br>
+                    <span class="text-lg font-serif ">Basic Rules</span>
+                    <br><br>
+                    <div class="bg-green-800 text-white shadow-xl p-6 w-fit rounded-xl wow animate__animated animate__slideInRight">
+                    1. Players alternate turns, moving one piece at a time.
+                    <br>
+                    2. A move must be made; skipping a turn is not allowed.
+                    <br>
+                    3. If a player touches a piece intending to move it, they must move it if legally possible
+                    (touch-move rule).
+                    <br>
+                    4. If a player's time runs out in timed games, they lose unless their opponent cannot checkmate
+                    them.
+                    </div>
+                    <br><br>
+                    <span class="text-lg font-serif ">Draw Conditions</span>
+                    <br><br>
+                    <div class="bg-white text-gray-900 shadow-2xl p-6 w-fit rounded-xl wow animate__animated animate__slideInLeft">
+                    Several scenarios can lead to a draw:
+                    <br>
+                    - Insufficient material to checkmate.
+                    <br>
+                    - Repetition of moves.
+                    <br>
+                    - Stalemate.
+                    <br>
+                    - Mutual agreement between players.
+                    </div>
+                    <br><br>
+                    <span class="text-lg font-serif ">Conclusion</span>
+                    <br><br>
+                    <div class="bg-green-800 text-white shadow-xl p-6 w-fit rounded-xl wow animate__animated animate__slideInRight">
+                    Chess combines elements of strategy, tactics, and foresight. It requires players to think
+                    critically
+                    about their moves while anticipating their opponent's responses. With its simple rules yet
+                    complex
+                    strategies, chess continues to captivate millions around the globe as both a competitive sport
+                    and a
+                    recreational pastime.
+                    </div>
+                </p>
+                </details>
+            </div><br><br>
+            <hr class="border shadow-lg w-full">
+            <h1 class="text-4xl text-center py-5 pb-10">Euipments</h1>
+
+            <div class="mx-auto my-auto max-w-[1320px] sm:mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-y-4 md:gap-x-6 overflow-hidden lg:gap-x-14 px-5 py-5">
+                <div class="text-center shadow-md rounded-2xl bg-green-100">
+                    <div class="overflow-hidden">
+                        <img src="./images/mboard.jpg" alt="magnetic board" class="image p-4 scale-125 duration-1000">
+                    </div>
+                    <h3 class="py-1 text-2xl">Magnetic Chess Board</h3>
+                    <p class="py-1">Price: 999/-</p>
+                    <div class="mt-4">
+                        <a href="https://www.amazon.in/s?k=magnetic+chess+board&crid=1CRH3VVEICBTY&sprefix=magnetic+chess%2Caps%2C341&ref=nb_sb_ss_ts-doa-p_1_14"
+                            class="font-medium m-2 p-2 hover:bg-gray-600 hover:text-white border-gray-800 border-2 block rounded-lg">View
+                            More</a>
+                        <a href="https://www.amazon.in/Folding-Magnetic-Travel-Chess-Inches/dp/B0DQ1JRFQJ/ref=sr_1_7?crid=1WT480XM2RKJM&dib=eyJ2IjoiMSJ9.jneXR3m46XUWlFxD-np30s-IIniBFyGhvcwxSQ_gb3DyDzYPf25Vgya45FBD3mJq_3PenHzRwMsxdzANpVNlTicnCagrtbFsZf393iC1D2iRtXcfd9YwDmdd0KORDyaEsdiyaosVYdKNUIo81ci_TT2xt9slVXMfZCkxwCSPGY74Cmxa8q2niL9Cxl4VF5DnqIpgSvKzERFFUDAqBHhAGDWOBBUyCACk7QGOJN23j7CLYSuYhw9ZibWi3wl4qnDzWJJRERV4D2o-Hs-3zhrzdEACK6s46OwvPW5LrRF0tla_BbnYwP_OZbsn-mBS0LZXXXu2mZ-_uLWrU5yVpU1bF6Tx7hyr4jBv2-spf9DoITgNSSxi1VsoX3WPoivD9u4g02ttqQZO8ntfWXLlhVSy0FTq-NE1T5B0kuoYNnkTgP6hNdhl-xv1p-uyc8ci8X7d.xynuNPtw8_rHwi4AdHcDVbKqmt8VvZaBlxovy74eYVg&dib_tag=se&keywords=chess+board+set+magnetic+black+and+white&qid=1736261964&sprefix=chess+board+set+magnetic+lack+and+whit%2Caps%2C346&sr=8-7"
+                            class="bg-yellow-500 font-medium m-2 p-2 hover:bg-green-100 border-2 border-gray-800 block rounded-lg">Buy
+                            Now</a>
+                    </div>
+                </div>
+                <div class="text-center shadow-md shadow-red-500 rounded-2xl bg-green-100">
+                    <img src="./images/mtboaed.jpg" alt="Matte board" class="image p-4 scale-125 duration-1000">
+                    <h3 class="py-1 text-2xl">Matte Chess Board</h3>
+                    <p class="py-1">Price: 705/-</p>
+                    <div class="mt-4">
+                        <a href="https://www.amazon.in/s?k=matte+chess+board+set&crid=1JSQY1F1P22W5&sprefix=matte+chess+board+set+%2Caps%2C322&ref=nb_sb_noss_2"
+                            class="font-medium m-2 p-2 hover:bg-gray-600 hover:text-white border-gray-800 border-2 block rounded-lg">View
+                            More</a>
+                        <a href="https://www.amazon.in/StonKraft-Tournament-Foldable-Plastic-Pieces/dp/B00HXCMO9I/ref=sr_1_3_sspa?crid=195JNE5IPBBXX&dib=eyJ2IjoiMSJ9.tdvV5ci31mn85oK9g3YTysEFsh7KAFgn-aAeJmWlzWGlPw2O80akNcTFGtb9tP8NcAauZKvp8WigfgH_dLBp-udLPjd1sewZZ1XPHC-246_w-X66M7DPxZpb574ovtgnuYc0-UgO-ly3P_JA_-XFKTIBmzxn6ln7USH_jzkfZKELpUWhscXc4ho6SZ0WVIy8b9w_1vaih-_p11TO0jnvv3lCgsTyep1lJZVjaqZyXRg0rG6xbcv3lwrMPuUTiASLlzg4y71w6O5jZkwx34rP55rMe8QU26UeKtDCTc7-PVU.HTw9FcmsonpEZhmqML7mxrXrH-CU8ouBYq2fAjUi22A&dib_tag=se&keywords=chess+board+set+matt+green+and+white&qid=1736262317&sprefix=chess+board+set+matt+green+and+white%2Caps%2C299&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                            class="bg-yellow-500 font-medium m-2 p-2 hover:bg-green-100 border-2 border-gray-800 block rounded-lg">Buy
+                            Now</a>
+                    </div>
+                </div>
+                <div class="text-center shadow-md shadow-red-500 rounded-2xl bg-green-100">
+                    <img src="./images/clock.jpg" alt="chess clock" class="image p-4 scale-125 duration-1000">
+                    <h3 class="py-1 text-2xl">DGT Chess <br> Clock</h3>
+                    <p class="py-1">Price: 4500/-</p>
+                    <div class="mt-4">
+                        <a href="https://www.amazon.in/s?k=dgt+chess+clock&crid=K4925CCLC2S1&sprefix=dgt+chess+clock%2Caps%2C658&ref=nb_sb_noss_1"
+                            class="font-medium m-2 p-2 hover:bg-gray-600 hover:text-white border-gray-800 border-2 block rounded-lg">View
+                            More</a>
+                        <a href="https://www.amazon.in/Dgt-3000-Digital-Chess-Clock/dp/B00X65TVX8/ref=sr_1_2?crid=376U0CTMV2ZK4&dib=eyJ2IjoiMSJ9.Gq-7egv1zUovc5-iznj6a5_SNC7ZqM6lPUBm260NgZ7P-qoWK1WHsWpE8SYQepdapymvwdGwT-fWUZaTdIUUArBzJcRPV4C2M1DY_kB4YUQ5oXvFQ4_OgLoKbQnDJZgUKMdBzKcKKDSnO9B0mWOWDVwTxz-DO7syU0fYC-Ovsxg7qvsVKVMMNXxkCkxkDA4S4Goy5geM_ihNIS7jjtea6PHs7QJI8c0RknEtdIYW8bRkqWO2mkasCtRZ1tVl38k1_3oxxbDP1fhbgBAypNOc4SxLNbQOPAVgrC4e2n94mXdgNmL8rbgrobbjz7bLdUoR2hfU5sgKhsCKT4NzJm1wOzXp5gkx9_iF_75uli07-5avHpPCvULfZa6peyw1aobrlvMuxKqAnZoPDGrMUUekzmkivhutrs_c_o5Mt1AQ51Gy-KpiH8pzdvDpbkYweCpm.xCAh69ezxLCnsc-xhD0eh94D6dFVK7Ev3GRnLgFd7Fs&dib_tag=se&keywords=dgt+chess+clock&nsdOptOutParam=true&qid=1736262469&sprefix=dgt+%2Caps%2C286&sr=8-2"
+                            class="bg-yellow-500 font-medium m-2 p-2 hover:bg-green-100 border-2 border-gray-800 block rounded-lg">Buy
+                            Now</a>
+                    </div>
+                </div>
+                <div class="text-center shadow-md shadow-red-500 rounded-2xl hover:scale-125 bg-green-100">
+                    <img src="./images/book.jpg" alt="chess clock" class="image p-4 duration-1000">
+                    <h3 class="py-1 text-2xl">Bobby Fischer's Book</h3>
+                    <p class="py-1">Price: 301/-</p>
+                    <div class="mt-4">
+                        <a href="https://www.amazon.in/s?k=chess+books&crid=1AKT75SS3LHRW&sprefix=chess+books%2Caps%2C328&ref=nb_sb_noss_1"
+                            class="font-medium m-2 p-2 hover:bg-gray-600 hover:text-white border-gray-800 border-2 block rounded-lg">View
+                            More</a>
+                        <a href="https://www.amazon.in/Bobby-Fischer-Teaches-Chess/dp/0553263153/ref=sr_1_2?crid=2I09MEQZP77WS&dib=eyJ2IjoiMSJ9.Ci31Q5rNPWr4byma55vLA5-gsrQLJ3OqhaDb2WK2Y3vE0jj8Zt5r2TbrrUnFTfSTGde0eT7Mli5mGgaOF3kTRhbCkhwbQQ_IEszFfIWVCXcaG70dDUas9s9SjRwr1Vf892xxrWA55UcVZYz2ByoXBn4lBwyHXbd1Dd7-9KovRJSBXKH6JQ7GtsWG6Vfo9MRCcPX4-eXTcH0RC476IQ7smc4PoQwxhQ-DB2tkgg5IQ8E._yq4gE53Db9Auz1HF4tpfJ-YmWENyIKYO60bWkduIy4&dib_tag=se&keywords=bobby+fischer+teaches+chess&qid=1736262542&sprefix=bobby+fis%2Caps%2C309&sr=8-2"
+                            class="bg-yellow-500 font-medium m-2 p-2 hover:bg-green-100 border-2 border-gray-800 block rounded-lg">Buy
+                            Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer id="contact" class="bg-gray-800 text-gray-200 py-10 text-center">
+        <p>At-saphale,near flyover, saphale east, palghar-401102.</p><br>
+        <div class="container  mx-auto text-center space-y-2">
+            <p>Connect with us on following social media Platforms.</p>
+            <div class="flex justify-center items-center sm:gap-x-2 lg:gap-10">
+                <a href="https://www.instagram.com/" class="gap-1">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/" class="gap-1">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://x.com/" class="gap-1">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://in.linkedin.com/" class="gap-1">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div><br>
+        <div>
+            <i class="fa-regular fa-copyright"></i>
+            <span>Copyright All rights are reserved</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

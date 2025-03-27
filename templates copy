@@ -1,0 +1,27 @@
+<script>start("c:\\wamp64\\www\\1stwebsite\\templates copy\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("css","css",1,0,"0 B",1737799198,"1/25/25, 3:29:58 PM");</script>
+<script>addRow("dist","dist",1,0,"0 B",1737799198,"1/25/25, 3:29:58 PM");</script>
+<script>addRow("node_modules","node_modules",1,0,"0 B",1737799208,"1/25/25, 3:30:08 PM");</script>
+<script>addRow("about.html","about.html",0,7445,"7.3 kB",1736434652,"1/9/25, 8:27:32 PM");</script>
+<script>addRow("book.jpg","book.jpg",0,25938,"25.3 kB",1736434652,"1/9/25, 8:27:32 PM");</script>
+<script>addRow("clock.jpg","clock.jpg",0,35007,"34.2 kB",1736434652,"1/9/25, 8:27:32 PM");</script>
+<script>addRow("contact.html","contact.html",0,6916,"6.8 kB",1736687162,"1/12/25, 6:36:02 PM");</script>
+<script>addRow("contact.php","contact.php",0,1078,"1.1 kB",1737706820,"1/24/25, 1:50:20 PM");</script>
+<script>addRow("detail.php","detail.php",0,1190,"1.2 kB",1737707316,"1/24/25, 1:58:36 PM");</script>
+<script>addRow("index.html","index.html",0,18832,"18.4 kB",1737799306,"1/25/25, 3:31:46 PM");</script>
+<script>addRow("login.html","login.html",0,6002,"5.9 kB",1736687112,"1/12/25, 6:35:12 PM");</script>
+<script>addRow("mboard.jpg","mboard.jpg",0,46582,"45.5 kB",1736434652,"1/9/25, 8:27:32 PM");</script>
+<script>addRow("mtboaed.jpg","mtboaed.jpg",0,27260,"26.6 kB",1736434652,"1/9/25, 8:27:32 PM");</script>
+<script>addRow("package-lock.json","package-lock.json",0,48287,"47.2 kB",1736434652,"1/9/25, 8:27:32 PM");</script>
+<script>addRow("package.json","package.json",0,60,"60 B",1736434653,"1/9/25, 8:27:33 PM");</script>
+<script>addRow("pawn-removebg-preview.png","pawn-removebg-preview.png",0,39834,"38.9 kB",1736434653,"1/9/25, 8:27:33 PM");</script>
+<script>addRow("script.js","script.js",0,127,"127 B",1736434653,"1/9/25, 8:27:33 PM");</script>
+<script>addRow("script1.js","script1.js",0,1452,"1.4 kB",1736434653,"1/9/25, 8:27:33 PM");</script>
+<script>addRow("services.html","services.html",0,7107,"6.9 kB",1736434653,"1/9/25, 8:27:33 PM");</script>
+<script>addRow("style.css","style.css",0,10539,"10.3 kB",1736685469,"1/12/25, 6:07:49 PM");</script>
+<script>addRow("submit.php","submit.php",0,1065,"1.0 kB",1737799304,"1/25/25, 3:31:44 PM");</script>
+<script>addRow("success.html","success.html",0,171,"171 B",1736434653,"1/9/25, 8:27:33 PM");</script>
+<script>addRow("tailwind.config.js","tailwind.config.js",0,182,"182 B",1736434653,"1/9/25, 8:27:33 PM");</script>
+<script>addRow("valid_user.php","valid_user.php",0,1193,"1.2 kB",1737558879,"1/22/25, 8:44:39 PM");</script>
+<script>addRow("view.php","view.php",0,2478,"2.4 kB",1737992576,"1/27/25, 9:12:56 PM");</script>
